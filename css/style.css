@@ -1,0 +1,896 @@
+
+
+
+
+
+@charset "UTF-8";
+
+html, body{
+    width: 100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif !important;
+}
+
+a{
+    text-decoration: none;
+    color: #000 !important;
+}
+a:hover
+{
+    text-decoration: none !important;
+}
+.clear{
+    clear: both;
+}
+
+/*home*/
+
+/*header*/
+
+header{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    /* border-top: 3px solid #ccc; */
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding: 5px 0px;
+}
+
+.header_int{
+    max-width: 1199px;
+    margin: auto;
+    position: relative;
+    /* border-right: 1px solid #ccc; */
+    /* border-left: 1px solid #ccc; */
+}
+
+.logo{display: inline-block;padding-right: 20px;border-right: 2px solid #ccc;}
+
+.logo h1{
+    margin: 0;
+    padding: 5px 12px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+header nav{display: inline-block;}
+
+header nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+header nav li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 12px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: 600ms;
+}
+
+header nav li:hover{
+    background-color: #ccc;
+}
+
+header nav li.act{
+    background-color: #ccc;
+}
+
+.wrapper{
+    width: 100%;
+    padding-top: 34px;
+    z-index: 2;
+}
+
+.content{
+    max-width: 1220px;
+    margin: auto;
+  
+}
+
+
+.work .content 
+{
+    padding-top: 0 !important;
+}
+
+.parrafo{
+    position: absolute;
+    bottom: 30px;
+    /*text-align: justify;*/
+   
+   
+}
+
+.parrafo p{
+    color: #000;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    line-height: 15px;
+    margin: 0;
+}
+
+.images{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.image.act{
+    display: block;
+}
+
+footer{
+    border-top: 1px solid #ccc;
+    width: 100%;
+    position: absolute;
+}
+
+.footer_int{
+    max-width: 1200px;
+    margin: auto;
+    text-align: right;
+    padding: 2px 0px;
+}
+.uexel {
+    padding-top: 16px;
+}
+
+.dupla{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.dupla::after{
+    content: ' >';
+}
+
+.dupla::before{
+    content: '</ ';
+}
+
+
+.text{
+    width: 700px;
+    margin: 0px auto 40px;
+    line-height: 24px;
+}
+
+.text.contacto{
+    width: 700px;
+    position: fixed;
+left: 50px;
+top:200px;
+}
+
+.text h1{
+    margin: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.text img{
+    max-width: 100%;
+    height: auto;
+}
+
+.text p{
+    margin-top: 0;
+}
+
+.wp-caption{
+    width: auto!important;
+    max-width: 100%;
+}
+
+.alignleft{
+    float: left;
+    padding-top: 5px;
+    width: auto!important;
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+.alignright{
+    float: right;
+    padding-top: 5px;
+    width: auto!important;
+    max-width: 100%;
+    margin-left: 10px;
+}
+.aligncenter{
+    float: initial;
+    margin: 5px auto;
+    width: 100%!important;
+    text-align: center;
+}
+
+.text a{
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.text b{}
+
+.text strong{}
+
+.text img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text img.alignleft {
+    margin: 0px 20px 10px 0;
+    float: left;
+}
+
+.text img.alignright {
+    margin: 0px 0 10px 20px;
+    float: right;
+}
+
+.filters{
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: #fff;
+}
+
+.ui-group{
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.button-group{
+    max-width: 1180px;
+    margin: auto;
+    clear: both;
+}
+
+.button_int.button_int_d .button-group{
+    border:none;
+}
+
+.button-group button{}
+
+.button{
+    background-color: #fff;
+    border: none;
+    padding: 10px 14px;
+    list-style: none;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    float: left;
+    cursor: pointer;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border-left: 1px solid #fff;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.button.is-checked{
+    background-color: #000;
+    color: #fff;
+}
+
+.button_int.button_int_d .button{
+    margin: 5px 1px 5px 0px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    float: left;
+    line-height: 14px;
+    background-color: #000;
+    color: #fff;
+    text-transform: initial;
+}
+
+.button_int.button_int_d .button.is-checked{
+    background-color: #fff;
+    color: #000;
+}
+
+button:active{
+    outline: 0;
+}
+
+button:focus{
+    outline: 0;
+}
+
+.botones{
+    border-top: 1px solid #ccc;
+}
+
+.botones .button{}
+
+.content.grid{
+  
+    min-height: initial;
+    min-height: -o-calc(100vh - 146px);
+    min-height: -ms-calc(100vh - 146px);
+    min-height: -moz-calc(100vh - 146px);
+    min-height: -webkit-calc(100vh - 146px);
+    min-height: calc(100vh - 146px);
+}
+
+.item{
+   width: 33.33%;
+   float: left;
+   position: relative;
+       width: 30.33%;
+    float: left;
+    position: relative;
+    margin-left: 3%;
+    margin-top: 40px;
+
+}
+
+.item img{
+    max-width: 100%;
+    height: auto;
+}
+
+.item p{
+    margin: 0px;
+    font-size: 12px;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    font-weight: 400;
+}
+
+.item p span{
+    font-size: 11px;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.button_int{
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.button_int.button_int_d{
+    border: none;
+    display: none;
+}
+
+.text p.p_iframe{
+    width: 100%;
+    position: relative;
+    height: 0px;
+    padding-bottom: 56.6%;
+    clear: both;
+}
+
+.text p.p_iframe iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text form{
+    width: 400px;
+   
+    padding: 15px 20px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.text input{
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 3px 0px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 5px;
+}
+
+.text textarea{
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 3px 0px;
+    font-family: 'Lato', sans-serif;
+    resize: none;
+    height: 60px;
+}
+
+.text input[type="submit"]{
+    width: auto;
+    padding: 3px 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.text input[type="submit"]:hover{
+    background-color: #fff;
+}
+
+.text input:active{
+    outline: 0;
+}
+
+.text textarea:active{
+    outline: 0;
+}
+
+.text input:focus{
+    outline: 0;
+}
+
+.text textarea:focus{
+    outline: 0;
+}
+
+.text img{
+    max-width: 100%;
+    height: auto;
+}
+
+.text img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text img.alignleft {
+    margin: 0px 20px 10px 0;
+    float: left;
+}
+
+.text img.alignright {
+    margin: 0px 0 10px 20px;
+    float: right;
+}
+
+.text blockquote{
+    padding: 10px 0px;
+    font-size: 16px;
+    margin: 0px 10px;
+}
+
+.text blockquote p{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.text .wp-caption-text{
+    opacity: 0.8;
+    font-size: 12px;
+    padding-bottom: 0;
+    line-height: 1.54;
+    margin-top: -5px;
+    font-weight: 400;
+}
+
+.title{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-left: 2px solid #ccc;
+    padding-left: 20px;
+    height: 22px;
+    line-height: 22px;
+    width: -o-calc(100% - 580px);
+    width: -ms-calc(100% - 580px);
+    width: -moz-calc(100% - 580px);
+    width: -webkit-calc(100% - 580px);
+    width: calc(100% - 580px);
+    overflow: hidden;
+    opacity: 0;
+}
+
+.title.act{
+    opacity: 1;
+}
+
+.title p{
+    margin: 0;
+}
+
+.flecha{
+    position: fixed;
+    top: -o-calc(50% - 40px);
+    top: -ms-calc(50% - 40px);
+    top: -moz-calc(50% - 40px);
+    top: -webkit-calc(50% - 40px);
+    top: calc(50% - 40px);
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    z-index: 5;
+    background-color: #fff;
+}
+
+.flecha.flecha_izq{
+    left: 0;
+    border-left: 0;
+    background-image: url(img/flecha_izq.png);
+}
+
+.flecha.flecha_der{
+    right: 0;
+    border-right: none;
+    background-image: url(img/flecha_der.png);
+}
+
+.flecha.flecha_der .flecha_img{
+  /* position:absolute; */
+  right:0;
+}
+
+.flecha .flecha_int{
+    height: 90px;
+    width: 220px;
+    top: -25px;
+    position: absolute;
+    display: none;
+    background-color: #fff;
+}
+
+.flecha:hover .flecha_int{
+  display:block;
+}
+
+.flecha.flecha_izq .flecha_int{
+  left: 40px;
+  border: 1px solid #ccc;}
+
+.flecha.flecha_der .flecha_int{right: 40px;border: 1px solid #ccc;text-align: right;}
+
+.flecha_img{
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #ccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.flecha_title{
+    display: inline-block;
+    vertical-align: middle;
+    width: -o-calc(100% - 100px);
+    width: -ms-calc(100% - 100px);
+    width: -moz-calc(100% - 100px);
+    width: -webkit-calc(100% - 100px);
+    width: calc(100% - 100px);
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.flecha.flecha_izq .flecha_title{
+  margin-left:4px;
+}
+
+.flecha.flecha_der .flecha_title{
+  margin-right:4px;
+}
+
+.box{
+    width: 250px;
+    position: fixed;
+    top: 50px;
+    left: -o-calc(50% - 610px);
+    left: -ms-calc(50% - 610px);
+    left: -moz-calc(50% - 610px);
+    left: -webkit-calc(50% - 610px);
+    left: calc(50% - 610px);
+}
+
+.box_int{
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+
+
+
+.lang-en{
+    border: 1px solid #fff;
+    padding: 3px 10px;
+}
+.lang-en.active{
+    border: 1px solid #ccc;
+}
+.lang-es{
+    border: 1px solid #fff;
+    padding: 3px 10px;
+}
+.lang-es.active{
+    border: 1px solid #ccc;
+}
+.lang-fr{
+    border: 1px solid #fff;
+    padding: 3px 10px;
+}
+.lang-fr.active{
+    border: 1px solid #ccc;
+}
+
+
+.menu_idiomas{
+    position: absolute;
+    right: 2px;
+    top: 1px;
+}
+
+input::-webkit-input-placeholder {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+input::-moz-placeholder {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+input:-ms-input-placeholder {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+input:-moz-placeholder {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+textarea::-moz-placeholder {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+textarea:-ms-input-placeholder {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+textarea:-moz-placeholder {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+textarea#contactform-body {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.tag{
+    margin: 0px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: absolute;
+    background-color: #fff;
+    z-index: 2;
+    padding: 3px 5px;
+    left: 1px;
+    top: 1px;
+    min-width: 50px;
+    text-align: center;
+}
+
+input{
+        -webkit-appearance:none;
+        -webkit-border-radius: 0;
+}
+
+textarea{
+        -webkit-appearance:none;
+        -webkit-border-radius: 0;
+}
+.contact-form .btn-primary
+{
+     width: auto;
+    padding: 3px 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.box_int img
+{
+    width: 80%;
+}
+
+#output
+{
+color: #fff;
+    text-align: left;
+    font-size: 20px;
+    width: 63%;
+    text-align: center;
+    margin-top: 13px;
+    /* background: #ffffffb3; */
+    padding: 5px 0;
+}
+.images .item {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0px;
+}
+.images .carousel-control
+{
+display: none;
+}
+
+
+
+@media screen and (min-color-index:0) 
+and(-webkit-min-device-pixel-ratio:0) { @media
+{
+    .parrafo p { 
+
+            font-weight: 300;
+
+    }
+}}
+
+
+@media only screen and (max-width:1023px)
+{
+.content
+{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: #fff !important;
+    text-align: center;
+    margin: 0 auto;
+    min-height: 32px !important;
+    padding: 7px;
+}
+.parrafo p
+{
+background: #fff !important;
+}
+.content.grid
+{
+    width: 100%;
+}
+.content
+{
+    padding:0;
+   
+}
+.about .content
+{
+    top: 70px; 
+}
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media only screen and (max-width:767px)
+{
+    .wrapper
+    {
+        min-height: 362px;
+            position: relative;
+    padding-top: 29px !important;
+    z-index: 2;
+    margin-top: 8px !important;
+    }
+    .images
+    {
+        position: inherit !important;
+        background-size: 100%;
+    }
+    .image
+    {
+        position: relative !important;
+        height: 222px;
+    }
+    .parrafo
+    {
+    bottom: 0 !important;
+}
+.content
+ {
+    position: relative !important;
+    width: 100%;
+    bottom: 0;
+    background: #fff !important;
+    text-align: center;
+    margin: 0 auto;
+    min-height: 80px !important;
+}
+
+.parrafo p
+{
+background: #fff !important;
+}
+.about .content
+{
+    top: 0px; 
+}
+.text
+{
+    width: 100%;
+}
+.text.contacto
+{
+        width: 90%;
+            left: 4%;
+}
+.text form
+{
+    width: 90%;
+}
+
+
+}
+
+
+
+
+
