@@ -1,0 +1,138 @@
+*{
+	box-sizing: border-box;
+}
+
+.barh1{
+	font: bold;
+	font-size: 20pt;
+	color: black;
+	font-family: Merriweather;
+	
+
+
+}
+.c1{
+	width: 335px;
+	height: 114px;
+ /*   margin-left: 0px;*/
+    margin-top: 30px;"
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.barh2{
+	font-size: 28px;
+}
+p{
+	    /*font-family: justify;*/
+    width: 63%;
+    color: Myriad Pro;
+  
+    color: #484141;
+   font-size: 17px; 
+   font-weight: lighter;
+   font: Source Sans Pro;
+   
+
+}
+.l1{
+	font-size: 17pt;
+	font-family: SemiBold Source Sans Pro;
+	/*font-weight: SemiBold ;*/
+	/*line-height: 25.5px;*/
+	/*font-style: Source Sans Pro;*/
+
+	
+}
+.l3{
+	font-size: 17px;
+	font-family: SemiBold Source Sans Pro;
+	/*font-weight: SemiBold ;*/
+	line-height: 25.5px;
+	/*font-style: Source Sans Pro;*/
+
+	
+}
+.imgcls{
+	background: #aaa;
+	height: 750px;
+	width: 1125px;
+	/*margin-top: -154px;*/
+	max-width: 100%;
+	-webkit-object-fit: fill;
+  
+ /* margin-left: 60px;*/
+}
+
+.pname{
+	font-size: 17pt;
+	font-family: SemiBold Source Sans Pro;
+	/*margin-left: -227px;*/
+    /*width: 154px;*/
+    font-weight: bold;
+	
+}
+.imgcls3{
+	background: #aaa;
+	height: 156px;
+	width: 235px;
+	max-width: 100%;
+	/*margin: 0px 10px 10px 0px;*/
+	-webkit-object-fit: fill;
+	/*height:auto;*/
+	margin-left: 23px;
+	
+}
+.c2{
+	width: 610.437px;
+	height: 53.927px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+}
+.ccc{
+	    font-size: 17px;
+    color: #837b7b;
+   /* font-weight: 400;*/
+   margin-top: 60px;
+	}
+	.istsec{
+background-color: #aaa;
+	}
+.section{
+	background-color: #fff;
+    width: 1483px;
+    padding-left: 240px;
+    max-width: 1604px;
+}
+.con{
+	background-color: #fff;
+    width: 100%;
+   /* padding-left: 240px;*/
+    max-width: 100%;"
+}
+.li2{
+	font-size: 17pt;
+    font-family: SemiBold Source Sans Pro;
+
+    /*margin-left: -413px;*/
+    /*width: 232px;*/
+          /* width: 304px;*/
+    font-weight: bold;
+    /*margin-top: 15px;*/
+}
+.leftc{
+	font-size: 28pt;
+
+}
+.isth{
+	font-size: 28px;
+	/*font-family: Merriweather;
+	font-weight: lighter;
+
+
+*/
+margin-top: 20px;
+margin-bottom: 30px;
+font: Myriad Pro;
+line-height: 30px;
+}
