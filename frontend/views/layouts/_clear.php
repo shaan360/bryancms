@@ -15,27 +15,14 @@ use yii\helpers\Html;
     <title><?php echo Html::encode($this->title) ?></title>
     <?php $this->head() ?>
     <?php echo Html::csrfMetaTags() ?>
-    <style type="text/css">
-    #warning-message { display: none; }
-    @media only screen and (orientation:portrait){
-        
-        #warning-message { display:block; }
-    }
-    @media only screen and (orientation:landscape){
-        #warning-message { display:none; }
-    }
 
-
-</style>
 </head>
-<body id="containerss">
+<body>
 
 <?php $this->beginBody() ?>
     <?php echo $content ?>
 <?php $this->endBody() ?>
-<div id="warning-message" style="color:red;font-weight:bold;text-align:center;padding-top:30px; ">
-   <p> To view images enlarged, please turn your mobile.</p>
-</div>
+
 </body>
 </html>
 <?php $this->endPage() ?>
