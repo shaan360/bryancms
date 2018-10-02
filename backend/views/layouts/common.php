@@ -143,20 +143,8 @@ $bundle = BackendAsset::register($this);
                         'label' => Yii::t('backend', 'Main'),
                         'options' => ['class' => 'header'],
                     ],
-                    [
-                        'label' => Yii::t('backend', 'Timeline'),
-                        'icon' => '<i class="fa fa-bar-chart-o"></i>',
-                        'url' => ['/timeline-event/index'],
-                        'badge' => TimelineEvent::find()->today()->count(),
-                        'badgeBgClass' => 'label-success',
-                    ],
-                    [
-                        'label' => Yii::t('backend', 'Users'),
-                        'icon' => '<i class="fa fa-users"></i>',
-                        'url' => ['/user/index'],
-                        'active' => (Yii::$app->controller->id == 'user'),
-                        'visible' => Yii::$app->user->can('administrator'),
-                    ],
+                   
+                   
                     [
                         'label' => Yii::t('backend', 'Content'),
                         'options' => ['class' => 'header'],
@@ -168,14 +156,14 @@ $bundle = BackendAsset::register($this);
                         'active' => (Yii::$app->controller->id == 'page'),
                     ],
                     [
-                        'label' => Yii::t('backend', 'Articles'),
+                        'label' => Yii::t('backend', 'Projects'),
                         'url' => '#',
                         'icon' => '<i class="fa fa-files-o"></i>',
                         'options' => ['class' => 'treeview'],
                         'active' => (Yii::$app->controller->module->id == 'article'),
                         'items' => [
                             [
-                                'label' => Yii::t('backend', 'Articles'),
+                                'label' => Yii::t('backend', 'Projects'),
                                 'url' => ['/content/article/index'],
                                 'icon' => '<i class="fa fa-file-o"></i>',
                                 'active' => (Yii::$app->controller->id == 'default'),
@@ -215,49 +203,8 @@ $bundle = BackendAsset::register($this);
                             ],
                         ],
                     ],
-                    [
-                        'label' => Yii::t('backend', 'Translation'),
-                        'options' => ['class' => 'header'],
-                    ],
-                    [
-                        'label' => Yii::t('backend', 'Translation'),
-                        'url' => ['/translation/default/index'],
-                        'icon' => '<i class="fa fa-language"></i>',
-                        'active' => (Yii::$app->controller->module->id == 'translation'),
-                    ],
-                    [
-                        'label' => Yii::t('backend', 'System'),
-                        'options' => ['class' => 'header'],
-                    ],
-                    [
-                        'label' => Yii::t('backend', 'RBAC Rules'),
-                        'url' => '#',
-                        'icon' => '<i class="fa fa-flag"></i>',
-                        'options' => ['class' => 'treeview'],
-                        'active' => in_array(Yii::$app->controller->id, ['rbac-auth-assignment', 'rbac-auth-item', 'rbac-auth-item-child', 'rbac-auth-rule']),
-                        'items' => [
-                            [
-                                'label' => Yii::t('backend', 'Auth Assignment'),
-                                'url' => ['/rbac/rbac-auth-assignment/index'],
-                                'icon' => '<i class="fa fa-circle-o"></i>',
-                            ],
-                            [
-                                'label' => Yii::t('backend', 'Auth Items'),
-                                'url' => ['/rbac/rbac-auth-item/index'],
-                                'icon' => '<i class="fa fa-circle-o"></i>',
-                            ],
-                            [
-                                'label' => Yii::t('backend', 'Auth Item Child'),
-                                'url' => ['/rbac/rbac-auth-item-child/index'],
-                                'icon' => '<i class="fa fa-circle-o"></i>',
-                            ],
-                            [
-                                'label' => Yii::t('backend', 'Auth Rules'),
-                                'url' => ['/rbac/rbac-auth-rule/index'],
-                                'icon' => '<i class="fa fa-circle-o"></i>',
-                            ],
-                        ],
-                    ],
+                  
+                    
                     [
                         'label' => Yii::t('backend', 'Files'),
                         'url' => '#',
@@ -285,23 +232,19 @@ $bundle = BackendAsset::register($this);
                         'icon' => '<i class="fa fa-arrows-h"></i>',
                         'active' => (Yii::$app->controller->id == 'key-storage'),
                     ],
+                     [
+                        'label' => Yii::t('backend', 'Site Settings'),
+                        'icon' => '<i class="fa fa-cog"></i>',
+                        'url' => ['/settings/update?id=1'],
+                        'active' => (Yii::$app->controller->id == 'settings'),
+                        'visible' => Yii::$app->user->can('administrator'),
+                    ],
                     [
                         'label' => Yii::t('backend', 'Cache'),
                         'url' => ['/system/cache/index'],
                         'icon' => '<i class="fa fa-refresh"></i>',
                     ],
-                    [
-                        'label' => Yii::t('backend', 'System Information'),
-                        'url' => ['/system/information/index'],
-                        'icon' => '<i class="fa fa-dashboard"></i>',
-                    ],
-                    [
-                        'label' => Yii::t('backend', 'Logs'),
-                        'url' => ['/system/log/index'],
-                        'icon' => '<i class="fa fa-warning"></i>',
-                        'badge' => SystemLog::find()->count(),
-                        'badgeBgClass' => 'label-danger',
-                    ],
+                    
                 ],
             ]) ?>
         </section>

@@ -15,7 +15,7 @@ use yii\web\JsExpression;
  * @var $dataProvider yii\data\ActiveDataProvider
  */
 
-$this->title = Yii::t('backend', 'Articles');
+$this->title = Yii::t('backend', 'Projects');
 
 $this->params['breadcrumbs'][] = $this->title;
 
@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <p>
     <?php echo Html::a(
-        Yii::t('backend', 'Create {modelClass}', ['modelClass' => 'Article']),
+        Yii::t('backend', 'Create {modelClass}', ['modelClass' => 'Project']),
         ['create'],
         ['class' => 'btn btn-success']) ?>
 </p>

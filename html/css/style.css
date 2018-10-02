@@ -25,10 +25,15 @@
  /*   margin-left: 0px;*/
     margin-top: 30px;"
     font-size: 17px;
+<<<<<<< HEAD
    /* margin-bottom: 30px;*/
     max-height: 100%;
 
 
+=======
+    margin-bottom: 30px;
+    max-height: 100%;
+>>>>>>> 9cbf5c7f30a4ac09aee2eb76f13889bb689217b7
 }
 .barh2{
 	font-size: 28px;
@@ -158,6 +163,7 @@ background-color: #aaa;
 
 }
 .isth{
+<<<<<<< HEAD
 	
 
 font-size: 28pt;
@@ -181,6 +187,26 @@ li{
 	text-decoration: none;
 	list-style-type: none;
 }
+=======
+	font-size: 28pt;
+	/*font-family: Merriweather;
+	font-weight: lighter;
+
+
+*/
+/*position: fixed;*/
+margin-top: 20px;
+margin-bottom: 30px;
+font: Myriad Pro;
+line-height: 30px;
+/*position: fixed;
+overflow: hidden;
+top: 0;*/
+
+}
+
+
+>>>>>>> 9cbf5c7f30a4ac09aee2eb76f13889bb689217b7
 
 
 
@@ -192,6 +218,7 @@ li{
 	/*margin-left: -227px;*/
     /*width: 154px;*/
     font-weight: bold;
+<<<<<<< HEAD
    color: black;
 }
 .pname a:hover {
@@ -203,6 +230,8 @@ li{
     color: #121213;
     /* text-decoration: underline; */
     text-decoration: none;
+=======
+>>>>>>> 9cbf5c7f30a4ac09aee2eb76f13889bb689217b7
 }
 .l1:nth-child(1) > strong:nth-child(1) {
 	font-size: 17pt;
@@ -240,7 +269,10 @@ li{
   position: fixed;
  /* width: 100%;*/
   top: 98px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9cbf5c7f30a4ac09aee2eb76f13889bb689217b7
   width: 335px;
 	/*height: 114px;*/
  /*   margin-left: 0px;*/
@@ -256,6 +288,7 @@ text-decoration: none;
 
 
 }
+<<<<<<< HEAD
 
 
 
@@ -271,3 +304,5 @@ text-decoration: none;
 .p1{
 	padding: 16px;
 }
+=======
+>>>>>>> 9cbf5c7f30a4ac09aee2eb76f13889bb689217b7

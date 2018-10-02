@@ -5,7 +5,7 @@ namespace frontend\controllers;
 use frontend\models\ContactForm;
 use Yii;
 use yii\web\Controller;
-
+use frontend\models\search\ArticleSearch;
 /**
  * Site controller
  */
@@ -33,7 +33,12 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $searchModel = new ArticleSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider->sort = [
+            'defaultOrder' => ['created_at' => SORT_DESC]
+        ];
+        return $this->render('index', ['searchModel' => $searchModel, 'dataProvider' => $dataProvider]);
     }
 
     public function actionContact()

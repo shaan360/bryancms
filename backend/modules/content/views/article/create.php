@@ -7,10 +7,10 @@
  */
 
 $this->title = Yii::t('backend', 'Create {modelClass}', [
-    'modelClass' => 'Article',
+    'modelClass' => 'Project',
 ]);
 
-$this->params['breadcrumbs'][] = ['label' => Yii::t('backend', 'Articles'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('backend', 'Projects'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 
 ?>
