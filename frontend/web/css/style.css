@@ -121,7 +121,7 @@ background-color: #aaa;
   background-color: #fff;
     width: 100%;
    /* padding-left: 240px;*/
-    max-width: 100%;"
+    max-width: 100%;
 }
 .li2{
   font-size: 17pt;
@@ -216,6 +216,15 @@ top: 0;*/
 font-weight:bold;
 /*text-decoration:underline;*/
 text-decoration: none;
-
-
+}
+.grid-container {
+  display: grid;
+  grid-gap: 10px 23px;
+  grid-template-columns: auto auto auto auto auto;
+}
+.grid-item {
+  background-color: red;
+  text-align: center;
+  width: 235px;
+  height: 156px;
 }

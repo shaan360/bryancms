@@ -3,6 +3,8 @@
 
 # Composer
 /vendor
+/frontend/web/assets
+/backend/web/assets
 composer.phar
 
 # JS
